@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
+/*@font-face {
   font-family: font-1;
   src: url(./Helvetica-Oblique.ttf);
-}
+}*/
 
 h1 {
   font-family: font-1, Arial, sans-serif;
