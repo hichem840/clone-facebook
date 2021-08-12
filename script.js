@@ -1,22 +1,31 @@
-//const input = document.querySelectorAll("input");
-///console.log(input)
+const inputpassword = document.querySelector("input[type=password]");
 
-//input.addEventListener("click",( ) => {
- //   console.log("hichem")
-//}),
+
 const password = document.getElementById("password");
-const togglePassword = document.getElementById("toggle-password");
+const toggle = document.getElementById("toggle");
+
+password.addEventListener("click",()=>{
+  password.style.border = "1px solid green"
+});
+
+inputpassword.addEventListener("keypress",(e)=>{
+
+     if (!(e.key=="")){
+       toggel.classList.add("invisible")
+     }
+     if(e.target.value === ""){
+      toggel.style.backround="red";
+     }
+})
 
 
 function toggleClicked() {  
-    if (togglePassword.checked) {
-      password.type = "text";
-      
-    
-    } else {
-      password.type = "password";
-    }
-    password.classList.toggle('visible'); 
+  if (password.type==='password'){
+    password.setAttribute('type','text');
+    toggel.classList.add("visible")
+  }else{
+    password.setAttribute('type','password');
+    toggle.classList.remove("visible")
   }
+  };
   
-  togglePassword.addEventListener("click", toggleClicked);

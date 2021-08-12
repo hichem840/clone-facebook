@@ -3,22 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*@font-face {
+@font-face {
   font-family: font-1;
-  src: url(./Helvetica-Oblique.ttf);
-}*/
-
-h1 {
-  font-family: font-1, Arial, sans-serif;
-  margin-top: 200px;
-  margin-left: 180px;
-  font-size: 50px;
-  color: hsl(214, 89%, 52%);
+  src: url(./font/helvetica-rounded-bold-5871d05ead8de.otf);
 }
-p {
+
+img {
+  width: 300px;
+  height: 110px;
+  margin-top: 177px;
+  margin-left: 160px;
+  margin-bottom: -13px;
+}
+p.coté-form {
+  margin-left: 200px;
   font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
   font-size: 28px;
-  margin-left: 180px;
+  margin-left: 188px;
+  color: #1c1e21;
+  line-height: 32px;
 }
 
 body {
@@ -27,9 +30,10 @@ body {
 }
 
 .form {
+  position: relative;
   z-index: 100;
   background-color: hsl(0, 0%, 100%);
-  height: 360px;
+  height: 340px;
   width: 400px;
   float: right;
   transform: translateY(-320px);
@@ -104,11 +108,38 @@ a {
   line-height: 16px;
   color: #ffff;
 }
-#password {
+
+#toggel.invisible {
+  transform: translate(350px, -47px);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
   background-image: url("https://img.icons8.com/material-outlined/20/000000/invisible.png");
-  background-position: 97% center;
-  background-repeat: no-repeat;
+  cursor: pointer;
 }
-#password.visible {
+#toggel.visible {
   background-image: url("https://img.icons8.com/material-sharp/20/000000/visible.png");
+}
+
+.after-form {
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  position: absolute;
+  transform: translate(795px, 180px);
+  text-align: center;
+  font-size: 14px;
+}
+strong:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .part1 {
+    transform: translate(100px, 50px);
+    justify-content: center;
+  }
+  .logo {
+    transform: translate(-80px, -140px);
+  }
 }

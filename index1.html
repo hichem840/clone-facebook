@@ -10,26 +10,33 @@
 
   <body>
     <div class="logo">
-      <h1>facebook</h1>
-      <p>
-        Avec Facebook, partagez et restez <br />en contact avec votre entourage
+      <img src="./logo-fb-removebg-preview.png" alt="facebook" />
+      <p class="coté-form">
+        Avec Facebook, partagez et restez en <br />contact avec votre entourage.
       </p>
     </div>
-    <div class="form">
-      <input type="text" placeholder="Adress e-mail ou numéro tél" />
-      <input
-        class="chekbox"
-        type="password"
-        placeholder="Mot de passe"
-        id="password"
-      />
-      <input type="submit" value="Se connecter" />
-      <h3><span>Mot de passe oublié ?</span></h3>
-      <hr class="lign" />
-      <button>
-        <a href="https://www.facebook.com/hichem.boulouza.5">Créer un compte</a>
-      </button>
-      <script src="./script.js"></script>
+    <div class="part1">
+      <div class="form">
+        <input type="text" placeholder="Adress e-mail ou numéro tél" />
+        <input type="password" placeholder="Mot de passe" id="password" />
+        <div id="toggel" onclick="toggleClicked()"></div>
+        <input type="submit" value="Se connecter" />
+        <h3><span>Mot de passe oublié ?</span></h3>
+        <hr class="lign" />
+        <button>
+          <a href="https://www.facebook.com/hichem.boulouza.5"
+            >Créer un compte</a
+          >
+        </button>
+      </div>
+      <div class="after-form">
+        <p>
+          <strong>Créer une Page</strong> pour une célébrité, un groupe ou un
+          <br />
+          entreprise.
+        </p>
+      </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
