@@ -1,12 +1,16 @@
 const inputpassword = document.querySelector("input[type=password]");
-
-
+const inputs = document.querySelectorAll("input[type=text],input[type=password]");
 const password = document.getElementById("password");
 const toggle = document.getElementById("toggle");
 
-password.addEventListener("click",()=>{
-  password.style.border = "1px solid green"
-});
+
+inputs.addEventListener("focus", ()=>{
+  nputs.style.border="2px solid blue"
+})
+console.log(inputs)
+//inputpassword.addEventListener("click",()=>{
+ // password.style.border = "1px solid green"
+//});
 
 inputpassword.addEventListener("keypress",(e)=>{
 
