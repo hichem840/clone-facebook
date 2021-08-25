@@ -1,35 +1,45 @@
 const inputpassword = document.querySelector("input[type=password]");
 const inputs = document.querySelectorAll("input[type=text],input[type=password]");
 const password = document.getElementById("password");
-const toggle = document.getElementById("toggle");
+const toggel = document.getElementById("toggel");
+const button =document.querySelector("button")
+const form=document.querySelector(".form2")
 
 
-inputs.addEventListener("focus", ()=>{
-  nputs.style.border="2px solid blue"
-})
-console.log(inputs)
-//inputpassword.addEventListener("click",()=>{
- // password.style.border = "1px solid green"
-//});
 
-inputpassword.addEventListener("keypress",(e)=>{
-
-     if (!(e.key=="")){
+password.addEventListener("input", (e) =>{ 
+     if (e.target.value !=="") {
        toggel.classList.add("invisible")
-     }
-     if(e.target.value === ""){
-      toggel.style.backround="red";
-     }
-})
+    }else{
+        toggel.classList="";
+        }
+      })
 
-
-function toggleClicked() {  
+     // button.addEventListener("click", (e)=>{
+      //  e.preventDefault()
+     //   document.body.style.opacity = "0.3"
+     // document.body.style.background="hsl(240,20%,99%)"
+  //    form.style.display= "block"
+  //  document.body.innerHTML+=`
+    //<div class="form2"> 
+   // <h1>S’inscrire</h1>
+   // <h4>C’est rapide et facile.</h4>
+    //<hr class="lign2">
+    //<div class="grid-container">
+   // <input type="text" placeholder="prenom" >
+   // <input type="text" placeholder="nom de famille" >
+   // <input type="text" placeholder="numéro de mobile ou e-mail" >
+    //<input type="password" placeholder="nouveau mot de passe" >
+    //</div>
+    //</div>`   })
+   
+function toggelClicked() {  
   if (password.type==='password'){
     password.setAttribute('type','text');
     toggel.classList.add("visible")
   }else{
     password.setAttribute('type','password');
-    toggle.classList.remove("visible")
+    toggel.classList.remove("visible")
   }
   };
   
