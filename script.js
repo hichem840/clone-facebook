@@ -6,7 +6,6 @@ const button =document.querySelector("button")
 const form=document.querySelector(".form2")
 
 
-
 password.addEventListener("input", (e) =>{ 
      if (e.target.value !=="") {
        toggel.classList.add("invisible")
@@ -15,31 +14,42 @@ password.addEventListener("input", (e) =>{
         }
       })
 
-     // button.addEventListener("click", (e)=>{
-      //  e.preventDefault()
-     //   document.body.style.opacity = "0.3"
-     // document.body.style.background="hsl(240,20%,99%)"
-  //    form.style.display= "block"
-  //  document.body.innerHTML+=`
-    //<div class="form2"> 
-   // <h1>S’inscrire</h1>
-   // <h4>C’est rapide et facile.</h4>
-    //<hr class="lign2">
-    //<div class="grid-container">
-   // <input type="text" placeholder="prenom" >
-   // <input type="text" placeholder="nom de famille" >
-   // <input type="text" placeholder="numéro de mobile ou e-mail" >
-    //<input type="password" placeholder="nouveau mot de passe" >
-    //</div>
-    //</div>`   })
-   
-function toggelClicked() {  
-  if (password.type==='password'){
-    password.setAttribute('type','text');
-    toggel.classList.add("visible")
-  }else{
-    password.setAttribute('type','password');
-    toggel.classList.remove("visible")
-  }
-  };
-  
+      function toggelClicked() {  
+        if (password.type==='password'){
+          password.setAttribute('type','text');
+          toggel.classList.add("visible")
+        }else{
+          password.setAttribute('type','password');
+          toggel.classList.remove("visible")
+        }
+      };
+      
+
+      // Get the modal
+     var modal = document.getElementById("myModal");
+     
+     // Get the button that opens the modal
+     var btn = document.getElementById("myBtn");
+     
+     // Get the <span> element that closes the modal
+     var span = document.getElementsByClassName("close")[0];
+     
+     // When the user clicks on the button, open the modal
+     btn.onclick = function() {
+       modal.style.display = "block";
+     //  document.body.style.opacity="0.3"
+      document.body.style.background="hsl(240,20%,99%)"
+     }
+     
+     // When the user clicks on <span> (x), close the modal
+     span.onclick = function() {
+       modal.style.display = "none";
+     }
+     
+    // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+       if (event.target == modal) {
+         modal.style.display = "none";
+       }
+     }
+        
