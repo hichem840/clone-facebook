@@ -51,9 +51,9 @@
     <form class="form2">
       <input type="text" placeholder="Prénom">
       <input type="text" placeholder="Nom de famille" id="text2">
-      <input type="tel" placeholder="NUméro de mobile ou e-mail">
+      <input type="tel" placeholder="Numéro de mobile ou e-mail">
       <input type="password" placeholder="Nouveau mot de passe">
-      <h5>Date de naissance <span> </span></h5>
+      <h5>Date de naissance <span class="cercle"><i>?</i></span></h5>
       <select name="jours" id="jour">
         <option value="0">Jour</option>
         <option value="1">1</option>
@@ -217,21 +217,21 @@
         <option value="2030">2030</option>
         <option value="2031">2031</option>
     </select>
-     <h5>Genre <span></span></h5>
+     <h5>Genre <span class="cercle"><i>?</i></span></h5>
      <div class="genre">
      <div class="radio">
        <label for="femme">Femme</label>
-       <input type="radio" id="femme" name="femme" value="woman">
+       <input type="radio" id="femme" name="genre" value="woman">
       </div>
       
       <div class="radio" id="man">
         <label for="homme">Homme</label>
-        <input type="radio" id="homme" name="homme" value="man" >
+        <input type="radio" id="homme" name="genre" value="man" >
       </div>
       
       <div class="radio" id="person">
         <label for="Personnalisé">Personnalisé</label>
-        <input type="radio" id="Personnalisé">
+        <input type="radio" name="genre" id="Personnalisé">
       </div>
       
       </div>

@@ -244,7 +244,7 @@ form{
   border-radius: 5px;
   font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
   font-size: 15px;
-  color: hsl(217,8%,69%);
+  
   background: hsl(210,11%,96%);
   border: none;
   border: 1px solid hsl(213,10%,82%);
@@ -264,10 +264,11 @@ form{
 .form2 input[type="password"]
 {  
   margin-top: 10px;
-  width:400px;
+  width:407px;
   height: 43px;
 }
 #text2{
+  width: 202px;
   margin-left: 7px;
 }
 select{
@@ -346,7 +347,7 @@ label{
 }
 .form2 p span:hover{
  cursor:pointer ;
- user-select:#385898;
+ text-decoration: underline;
 }
 .form2 button{
   color: hsl(0,0%,100%);
@@ -358,6 +359,30 @@ label{
   width: 195px;
   height: 35px;
   margin-top: 25px;
+}
+.form2 button:hover{
+  background-color:rgba(29, 128, 29, 0.623) ;
+}
+.cercle{
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: hsl(214,8%,41%);
+}
+
+.form2 h5 span i {
+  color: #ffff;
+  position: absolute;
+  height:1px;
+  width: 1px;
+  margin-top: -3.25px;
+  margin-left: 2px;
+  font-size: 11px;
+
 }
 
 
