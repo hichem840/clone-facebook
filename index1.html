@@ -103,7 +103,7 @@
         <option value="11">Novembre</option>
         <option value="12">Décembre</option>
     </select>
-    <select name="annees" id="année">
+    <select name="annees" id="année" >
       <option value="0">Année</option>
         <option value="1921">1921</option>
         <option value="1922">1922</option>
@@ -218,8 +218,26 @@
         <option value="2031">2031</option>
     </select>
      <h5>Genre <span></span></h5>
-    
-     <input type="radio" >
+     <div class="genre">
+     <div class="radio">
+       <label for="femme">Femme</label>
+       <input type="radio" id="femme" name="femme" value="woman">
+      </div>
+      
+      <div class="radio" id="man">
+        <label for="homme">Homme</label>
+        <input type="radio" id="homme" name="homme" value="man" >
+      </div>
+      
+      <div class="radio" id="person">
+        <label for="Personnalisé">Personnalisé</label>
+        <input type="radio" id="Personnalisé">
+      </div>
+      
+      </div>
+
+      <p>En appuyant sur S’inscrire, vous acceptez nos <span>Conditions générales</span>, notre <span>Politique d’utilisation des données</span> et notre <span>Politique d’utilisation des cookies</span>. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner.</p>
+      <button>S’inscrire</button>
     </form>
     
   </div>
