@@ -196,19 +196,19 @@ strong:hover {
 
 /* The Close Button */
  .close {
- color: hsl(215,8%,41%);
+  color: hsl(215,8%,41%);
   float: right;
-  font-size: 28px;
-  margin-right: 10px;
+  font-size: 35px;
+  margin-right: -10px;
   height: 15px;
-  width: 15px;
+  width: 25px;
+ 
   
 }
 
-.close:hover,
-.close:focus {
+.close:hover {
+  cursor: pointer;
  
-  text-decoration: none;
 } 
 .lign2{
   transform:translatex(-15px);

@@ -4,7 +4,14 @@ const password = document.getElementById("password");
 const toggel = document.getElementById("toggel");
 const button =document.querySelector("button")
 const form=document.querySelector(".form2")
-
+const prenom =document.getElementById('text1')
+const Nomfamille =document.getElementById('text2')
+const tel=document.querySelector("input[type=tel]")
+const pass =document.getElementById("pass")
+ 
+// Nomfamille.addEventListener("click",(e)=>{
+//   if 
+// })
 
 password.addEventListener("input", (e) =>{ 
      if (e.target.value !=="") {
@@ -53,3 +60,4 @@ password.addEventListener("input", (e) =>{
        }
      }
         
+    
